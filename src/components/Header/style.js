@@ -1,8 +1,10 @@
 import styled from "styled-components"
 
 export const HeaderContainer = styled.h1`
-   display: flex;
+   display:flex;
    align-items:center;
+   justify-content: space-between;
+
    
   
   
@@ -13,7 +15,9 @@ export const HeaderContainer = styled.h1`
        
       font-family:Georgia, 'Times New Roman', Times, serif;
       font-size:50px;
-      margin-left:100px
+      margin-left:100px;
+      
+      
       
    }
    h6{
@@ -27,6 +31,7 @@ export const HeaderContainer = styled.h1`
        width: 150px;
        height: 150px;
        border-radius: 100%;
+       align-items:center;
       
       
    }
@@ -35,6 +40,7 @@ export const HeaderContainer = styled.h1`
        width: 150px;
        height: 150px;
        border-radius: 100%;
+       align-items:center;
       
       
    }
@@ -43,6 +49,7 @@ export const HeaderContainer = styled.h1`
        width: 150px;
        height: 150px;
        border-radius: 100%;
+       align-items:center;
       
       
    }

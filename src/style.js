@@ -23,18 +23,28 @@ export const FiltersContainer = styled.div`
    flex-wrap:wrap;
 `
 
-export const Divpai =styled.div`
+
+export const FiltersContainer2 = styled.div`
    display: grid;
-    grid-template-columns: 170px  1fr 300px;
+    grid-template-columns:  6fr 1fr 1fr ;
+    grid-template-rows: repeat(3, 20px);
 
-
-
+.Ordenacao{
+   font-family:Georgia, 'Times New Roman', Times, serif
+}
+  .Ordenacao2{
+   font-family:Arial, Helvetica, sans-serif;
+   margin-right:10px;  
+}
 `
+
+
+
 
 export const NavFiltros =styled.nav`
     display: grid;
     grid-template-rows: repeat(1, 150px);
-    margin-top:200px;
+    margin-top:80px;
     margin-left: 20px;
 
 
@@ -51,12 +61,19 @@ export const NavFiltros =styled.nav`
     }
 
 `
+export const Divpai =styled.div`
+   display: grid;
+    grid-template-columns: 170px  1fr 300px;
+   
+
+
+`
  export const Main1 =styled.main`
 
     display:grid;
     margin-top:20px;
     margin-left: 10px;
-    
+   
   
     
     

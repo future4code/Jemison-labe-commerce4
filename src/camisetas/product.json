@@ -4,7 +4,6 @@
       "title": "NASA",
       "description": "Camiseta Branca NASA",
       "price": 150,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/2255380/camiseta-camisa-nasa-exploracao-espacial-liga.jpg "
 
       
@@ -15,7 +14,6 @@
       "title": "Nave Jupiter ",
       "description": "Camiseta Preta Nave Jupiter 2",
       "price": 100,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/27EC623/camiseta-serie-perdidos-no-espaco-jupiter-2.jpg"
    },
    {
@@ -23,7 +21,6 @@
       "title": "Star Trek",
       "description": "Camiseta Preta Jornada Nas Estrelas - Next Generation",
       "price": 45.99,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/24F75F9/camiseta-serie-jornada-nas-estrelas-a-nova-geracao.jpg"
    },
    {
@@ -31,7 +28,6 @@
       "title": "ET",
       "description": "Camiseta Cinza Extraterrestre ",
       "price": 45.99,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/1D98AFD/camisa-camiseta-personaliza-extraterrestre-et-alien-espaco-extraterrestre-existe.jpg"
    },
    {
@@ -39,7 +35,6 @@
       "title": "NASA",
       "description": "Camiseta Branca NASA - Arco-Iris",
       "price": 40,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/2526642/camiseta-camisa-nasa-espaco-arco-iris-alianca-rebelde.jpg"
    },
    {
@@ -47,7 +42,6 @@
       "title": "Perdido no Espaço",
       "description": "Camiseta Preta Perdidos no Espaço- Para Casais",
       "price": 195.99,
-      "taken": true,
       "image": "https://img.elo7.com.br/product/main/3289ACE/camiseta-perdidos-no-espaco-blusa-anos-60-familia-robinson-major-don-west.jpg"
    }
  
