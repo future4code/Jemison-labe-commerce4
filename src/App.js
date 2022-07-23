@@ -1,15 +1,15 @@
 import React, { useState } from "react"
-import jobList from "./data/jobs.json"
+import productList from "./camisetas/product.json"
 import Header from "./components/Header";
 import Card from "./components/Card";
 import { Divpai, ListContainer , Main1, NavCarinho, NavFiltros } from "./style";
 import { Filters } from "./components/Filters";
-
+import {FiltersMain} from './components/Filters/index2'
 
 
 function App() {
 
-  const [jobs, setJobs] = useState(jobList)
+  const [product, setproducts] = useState(productList)
   const [query, setQuery] = useState("")
   const [minPrice, setMinPrice] = useState("")
   const [maxPrice, setMaxPrice] = useState("")
@@ -28,10 +28,6 @@ function App() {
     setMaxPrice(e.target.value)
   }
 
-  const updateSortingParameter = (e) => {
-    setSortingParameter(e.target.value)
-  }
-
   const updateOrder = (e) => {
     setOrder(e.target.value)
   }
@@ -48,42 +44,59 @@ function App() {
         <Filters
           query={query}
           updateQuery={updateQuery}
-          updateMinPrice={updateMinPrice}
-          updateMaxPrice={updateMaxPrice}
-          updateSortingParameter={updateSortingParameter}
-          updateOrder={updateOrder}
+
           minPrice={minPrice}
+          updateMinPrice={updateMinPrice}
+
           maxPrice={maxPrice}
-          sortingParameter={sortingParameter}
-          order={order}
+          updateMaxPrice={updateMaxPrice}
+          
+          
+          
         />
     </NavFiltros>
 
 
       <Main1>
 
+
+
+       <FiltersMain 
+       
+       
+       order={order}
+       updateOrder={updateOrder}
+      
+       
+       
+       
+       />
+
+       
+
         <ListContainer>
-          {jobs
-            .filter((job) => {
-              return  job.title.toLowerCase().includes(query.toLowerCase()) ||  job.description.toLowerCase().includes(query.toLowerCase()) 
+          {product
+            .filter((prod) => {
+              return  prod.title.toLowerCase().includes(query.toLowerCase()) 
+              ||  prod.description.toLowerCase().includes(query.toLowerCase()) 
             })
-            .filter((job) => {
-              return minPrice === "" || job.price >= minPrice
+            .filter((prod) => {
+              return minPrice === "" || prod.price >= minPrice
             })
-            .filter((job) => {
-              return maxPrice === "" || job.price <= maxPrice
+            .filter((prod) => {
+              return maxPrice === "" || prod.price <= maxPrice
             })
-            .sort((currentJob, nextJob) => {
+            .sort((currentProd, nextProd) => {
               switch (sortingParameter) {
                 case "title":
-                return order * currentJob.title.localeCompare(nextJob.title)
+                return order * currentProd.title.localeCompare(nextProd.title)
               
                 default:
-                  return order * (currentJob.price - nextJob.price)
+                  return order * (currentProd.price - nextProd.price)
               }
             })
-            .map((job) => {
-              return <Card key={job.id} job={job} />
+            .map((prod) => {
+              return  <Card key={prod.id} prod={prod} />
             })}
         </ListContainer>
        
