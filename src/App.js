@@ -28,10 +28,6 @@ function App() {
     setMaxPrice(e.target.value)
   }
 
-  const updateSortingParameter = (e) => {
-    setSortingParameter(e.target.value)
-  }
-
   const updateOrder = (e) => {
     setOrder(e.target.value)
   }
@@ -67,9 +63,7 @@ function App() {
 
        <FiltersMain 
        
-       sortingParameter={sortingParameter}
-       updateSortingParameter={updateSortingParameter}
-
+       
        order={order}
        updateOrder={updateOrder}
       

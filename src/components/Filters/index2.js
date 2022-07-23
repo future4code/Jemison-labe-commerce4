@@ -7,17 +7,7 @@ export function FiltersMain (props) {
     return <FiltersContainer2>
 <span>
     <label for="">Quantidade de Produtos</label>
-    <select 
-
-       name="sort"
-       value={props.sortingParameter}
-       onChange={props.updateSortingParameter}
-    >
-       <option value="title">Título</option>
-       <option value="price">Preço</option>
-       <option value="dueDate">Prazo</option>
-
-    </select>
+   
  </span>
  
 
