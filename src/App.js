@@ -107,9 +107,7 @@ function App() {
 
 
 
-      <NavCarinho>
-        <h3>carrinho</h3>
-      </NavCarinho>
+      
 
       </Divpai>
     </>
