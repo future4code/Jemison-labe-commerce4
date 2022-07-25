@@ -5,6 +5,8 @@ import Card from "./components/Card";
 import { Divpai, ListContainer , Main1, NavCarinho, NavFiltros } from "./style";
 import { Filters } from "./components/Filters";
 import {FiltersMain} from './components/Filters/index2'
+import {Compras} from './components/Card/index'
+import { addAbortSignal } from "stream";
 
 
 function App() {
@@ -15,6 +17,15 @@ function App() {
   const [maxPrice, setMaxPrice] = useState("")
   const [sortingParameter, setSortingParameter] = useState("")
   const [order, setOrder] = useState("")
+  const [addProduto, setaddProduto] = useState(productList)
+
+//const add=(e) =>{
+  //e.preventDefault();
+ // const newAdd = {title,description,price}
+ // const newList = [...addProduto,newAdd]
+//  setaddProduto(newList)
+//}
+
 
   const updateQuery = (e) => {
     setQuery(e.target.value)
@@ -107,6 +118,10 @@ function App() {
 
 
 
+      <NavCarinho>
+        <h2>compras:</h2>
+      </NavCarinho>
+        
       
 
       </Divpai>

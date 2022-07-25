@@ -4,8 +4,8 @@ export const CardContainer = styled.div`
   
    background-color: lavender;
    margin: 5px;
-   padding: 0 15px;
-   border-radius: 5px;
+   padding: 15px 15px;
+   border-radius: 50px;
    width: 270px;
   
   
@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
 `
 
 export const CardContent = styled.p`
-   padding: 15px 0;
+   padding: 25px 0;
   
    img{
       height:300px
@@ -26,12 +26,9 @@ export const CardContent = styled.p`
 export const CardFooter = styled.h4`
    display: flex;
    justify-content: space-between;
+   height:100px;
+   width:150px;
 
-
-   img{
-      height:40px;
-      border-radius: 600%;
-
-   }
 `
+
 

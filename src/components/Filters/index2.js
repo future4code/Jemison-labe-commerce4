@@ -5,10 +5,7 @@ import React from 'react'
 
 export function FiltersMain (props) {
     return <FiltersContainer2>
-<span>
-    <label for="">Quantidade de Produtos</label>
-   
- </span>
+
  
 
 
