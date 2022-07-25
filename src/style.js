@@ -6,11 +6,14 @@ export const ListContainer = styled.div`
    grid-template-columns: 1fr 1fr 1fr   ;
    grid-template-rows: 1fr 1fr ;
    flex-wrap:wrap;
+   background-color:black,
   
    *{
+     
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      
    }
 
  
@@ -21,6 +24,7 @@ export const FiltersContainer = styled.div`
    display: grid;
    justify-content: space-between;
    flex-wrap:wrap;
+   
 `
 
 
@@ -28,7 +32,7 @@ export const FiltersContainer2 = styled.div`
    display: grid;
     grid-template-columns:  6fr 1fr 1fr ;
     grid-template-rows: repeat(3, 20px);
-
+   
 .Ordenacao{
    font-family:Georgia, 'Times New Roman', Times, serif
 }
@@ -64,7 +68,7 @@ export const NavFiltros =styled.nav`
 export const Divpai =styled.div`
    display: grid;
     grid-template-columns: 170px  1fr 300px;
-   
+    
 
 
 `
@@ -72,7 +76,7 @@ export const Divpai =styled.div`
 
     display:grid;
     margin-top:20px;
-    margin-left: 10px;
+    margin-left: 25px;
    
   
     
@@ -82,9 +86,10 @@ export const Divpai =styled.div`
 ` 
 
 export const NavCarinho =styled.aside`
-   margin-top:20px;
+  
+  margin-top:20px;
     margin-left: 10px;
 
-background-color:green;
+background-color:white;
 
 `
